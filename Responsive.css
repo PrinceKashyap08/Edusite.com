@@ -1,0 +1,88 @@
+@media(max-width:768px){
+    .nav-menu{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 40%;
+        height: 100%;
+        background-color: #ffffff;
+        padding: 80px 30px;
+        flex-direction: column;
+        transition: all 0.7s ease;
+    }
+    .nav-menu a{
+        color: #374050;
+    }
+    .nav-menu.active{
+        right: 0;
+    }
+    .hamburger.active .line:nth-child(2){
+        background: transparent;
+    }
+    .hamburger.active .line:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .line:nth-child(3){
+        transform: translateY(-10px) rotate(-45deg);
+    }
+    .hamburger{
+        display: block;
+        position: fixed;
+        right: 30px;
+    }
+    .hero-container h1{
+        font-size: 3rem;
+    }
+    .hero-container p{
+        font-size: 1.5rem;
+        max-width: 100%;
+    }
+}
+
+@media(max-width:568px){
+    .navbar{
+        padding: 0 10px;
+    }
+    .nav-menu{
+        width: 50%;
+    }
+    .nav-menu a{
+        font-size: 1.4rem;
+    }
+    .hamburger{
+        display: block;
+        position: fixed;
+        right: 10px;
+    }
+    .hero-container{
+        align-items: center;
+        text-align: center;
+        padding: 0 10px;
+    }
+    .hero-container h1{
+        font-size: 2.8rem;
+    }
+    .hero-container p{
+        font-size: 1.4rem;
+        max-width: 80%;
+    }
+    .hero-container .h-btn{
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 400px){
+    .logo a img{
+        width: 80px;
+    }
+    .nav-menu a{
+        font-size: 1.2rem;
+    }
+    .hero-container h1{
+        font-size: 2.5rem;
+    }
+    .hero-container p{
+        font-size: 1.2rem;
+        max-width: 90%;
+    }
+}

@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Responsive.css">
+    <title>Edusite.com</title>
 </head>
 <body>
-    <!-- ----------- Header_section ------------- -->
+    <!---------------- header_section ---------------------->
     <header class="header">
-        <div class="logo">
-            <img src="/image/logo.png" alt="Edusite-logo-image">
-        </div>
-        <nav class="navbar">
+        <nav class="navbar wrapper">
+            <div class="logo">
+                <a href="#"><img src="/image/logo-alt.png" alt=""></a>
+            </div>
             <ul class="nav-menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -20,8 +21,30 @@
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </nav>
     </header>
-    <!-- ----------- /Header_section ------------- -->
+    <!---------------- /header_section ---------------------->
+
+    <!---------------- Main_section ---------------------->
+    <main>
+        <!---------------- hero_section ---------------------->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-container wrapper">
+                <h1>Edusite Free Online Training Courses</h1>
+                <p>Living by books, eloquence from the right, and do not abhor it brilliantly, I hope for the error of others.</p>
+                <a href="#" class="h-btn">Get Started!</a>
+            </div>
+        </section>
+        <!---------------- /hero_section ---------------------->
+    </main>
+    <!---------------- Main_section ---------------------->
+    
+    <script src="index.js"></script>
 </body>
 </html>
