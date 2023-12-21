@@ -1,3 +1,8 @@
+@media(max-width: 992px){
+    .course-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
 @media(max-width:768px){
     .nav-menu{
         position: fixed;
@@ -68,6 +73,9 @@
     }
     .hero-container .h-btn{
         font-size: 1.2rem;
+    }
+    .course-container{
+        grid-template-columns: repeat(1,1fr);
     }
 }
 
