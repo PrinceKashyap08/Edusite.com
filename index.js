@@ -9,6 +9,15 @@ function mobileMenu(){
     navMenu.classList.toggle("active");
 };
 
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+};
+
 // Footer-year 
 const Year = document.querySelector("#current-year")
 Year.innerHTML = new Date().getFullYear();
